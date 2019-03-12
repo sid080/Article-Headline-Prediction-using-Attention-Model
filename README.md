@@ -46,6 +46,8 @@ softmax layer along with the last hidden layer from the current step of the deco
 LSTMs help preserve the error that can be backpropagated through time and layers. By maintaining a more constant error, they allow recurrent nets to continue to learn over many time steps (over 1000), thereby opening a channel to link causes and effects remotely.
 Those gates act on the signals they receive, and similar to the neural network’s nodes, they block or pass on information based on its strength and import, which they filter with their own sets of weights. Those weights, like the weights that modulate input and hidden states, are adjusted via the recurrent networks learning process. That is, the cells learn when to allow data to enter, leave or be deleted through the iterative process of making guesses, backpropagating error, and adjusting weights via gradient descent.
 
+# Results
+The given model is able to achieve upto 97 percent accuracy on the validation set. The loss obtained after 5000 epochs is found out to be .0054. 
 
 # References
 1. Konstantin Lopyrev "Generating News Headlines with Recurrent Neural Networks"
